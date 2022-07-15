@@ -1,0 +1,51 @@
+.call{
+    width: 100vw;
+    background-color: black;
+    width: 100%;
+}
+.callwrapper{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.callwrapper h1{
+    color: white;
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: 100px;
+}
+.callwrapper p{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 300px;
+}
+.callwrapper button{
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: black;
+    padding: 10px 20px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.callwrapper button:hover{
+    color: black;
+    border: 1px solid white;
+    background-color: white;
+}
+
+@media  only screen and (max-width:990px) {
+
+    .callwrapper h1{
+       font-size: 30px;
+    }
+    .callwrapper p{
+        font-size: 15px;
+        margin: 0 100px;
+    }
+}

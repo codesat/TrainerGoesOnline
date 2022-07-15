@@ -1,0 +1,75 @@
+.person{
+    width: 100vw;
+    background-color: black;
+    padding: 60px;
+}
+.personwrapper{
+    padding-top: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+}
+.personwrapper .left{
+    flex: 1;
+}
+.personwrapper .right{
+    display: flex;
+    justify-content: center;
+    align-self:flex-start;
+    flex: 1;
+    padding: 50px 50px;
+}
+.personwrapper .left h1{
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+}
+.personwrapper .left .first{
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+}
+.personwrapper .left .second{
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.personwrapper .left button{
+    margin-top: 10px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.personwrapper .left button:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+
+}
+.personwrapper .right img{
+    height: auto;
+    max-width: 100%;
+    width: auto/9;
+    object-fit: cover;
+}
+
+
+/* RESPONSIVENESS */
+@media only screen and (max-width:990px){
+    .personwrapper{
+        flex-direction: column;
+    }
+    .personwrapper .left{
+        padding-right: 100px;
+    }
+    .personwrapper .right img{
+        padding-right: 100px;
+    }
+}

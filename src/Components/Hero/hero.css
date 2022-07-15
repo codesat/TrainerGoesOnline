@@ -1,0 +1,66 @@
+.hero{
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.781);
+}
+.herowrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.herowrapper .left{
+    flex: 1;
+    height: 100%;
+    padding-left: 50px;
+}
+.herowrapper .left .leftwrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+.herowrapper .right{
+    flex: 1;
+}
+.herowrapper .left .lefttop .up{
+    font-size: 70px;
+    color: #C2A43B;
+    line-height: 1.2;
+}
+.herowrapper .left .leftmid{
+   color: white;
+   margin: 20px 0;
+}
+.herowrapper .left .leftbtm button{
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    padding: 15px 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.herowrapper .left .leftbtm button:hover{
+    background-color: #333333;
+}
+.herowrapper .left .lefttop .down{
+    font-size: 70px;
+    color: white;
+    line-height: 1.2;
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width:990px) {
+    .herowrapper .left .lefttop .down{
+        font-size: 40px;
+    }
+    .herowrapper .left .lefttop .up{
+        font-size: 40px;
+    }
+    .herowrapper .left .leftbtm button{
+       font-size: 10px;
+    }
+    .herowrapper .left .leftmid{
+       font-size: 12px;
+    }
+}
