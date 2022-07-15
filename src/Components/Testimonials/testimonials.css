@@ -21,6 +21,7 @@
     align-items: center;
 }
 .testwrapper .cards .carditem{
+    flex: 1;
     padding: 40px 20px;
     background: #000;
     margin-right: 30px;
